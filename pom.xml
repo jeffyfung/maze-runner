@@ -26,7 +26,7 @@
     </parent>
 
     <groupId>CS61B</groupId>
-    <artifactId>proj3</artifactId>
+    <artifactId>mazeRunner</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <build>
