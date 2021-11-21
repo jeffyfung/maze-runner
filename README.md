@@ -9,16 +9,20 @@ In this game, you strive to escape as many mazes as possible!
 
 ## Enter player name and seed for random number generation
 Mazes are generated pseudo-randomly (see `#About the components` for details).
+Apart from pressing keys ("N", "L", "Q"), player can also click on the boxes of
+the relevant options.
+
 ![Alt Text](https://media.giphy.com/media/tjbOHwlUnaiWBm9e0r/giphy.gif)
 
 ## Basic movement - "WASD" keys
-**insert gif - basic movement**
+
+![Alt Text](https://media.giphy.com/media/zc301aOLYLOB1ARMFC/giphy.gif)
 
 ## Field of view
 The player can only see the tiles near them and hence has a field of view.
 The field of view moves along with the player.
 
-**insert gif - fov**
+![Alt Text](https://media.giphy.com/media/qWRMWVuw1pozyq7K6T/giphy.gif)
 
 Note: you can press "T" to temporarily disable field of view but that is cheating!
 
@@ -28,28 +32,36 @@ A HUD is located at the under the generated maze and shows:
 * Description of the tile the mouse cursor is currently pointing to 
 * Game level
 * Current date
-**insert gif - HUD**
+
+![Alt Text](https://media.giphy.com/media/WvJUUxLNcPPc3D6dmR/giphy.gif)
 
 ## Special game objects
 There are special objects in maze that can boost or hinder your progress, including:
 * BREAD : Gives player a +10 health boost.
-* PORTAL : Teleports player to the other side of the portal by pressing "H". Portals are bi-directional.
-* TORCH : Lights up the whole maze.
-* EXIT : Exits the maze.
 
-**inserts gif - special objects**
+![Alt Text](https://media.giphy.com/media/vSyOHAdGY4V4rfhq0R/giphy.gif)
+
+* PORTAL : Teleports player to the other side of the portal by pressing "H". Portals are bi-directional.
+
+![Alt Text](https://media.giphy.com/media/QuAbj7VHQXPiim8h0g/giphy.gif)
+
+* TORCH : Lights up the whole maze.
+
+![Alt Text](https://media.giphy.com/media/QXSAoUbjXJeqxrOKUR/giphy.gif)  
+
+* EXIT : Exits the maze and enter a new maze.
 
 ## Escaping maze until game over
 A new maze is immediately generated after escaping the maze.
 Game level is advanced by 1.
 
-**insert gif**
+![Alt Text](https://media.giphy.com/media/Mm7pWhfLEt8mjEk3P8/giphy.gif)
 
 Each movement consumes 1 health. The game is over when health falls to 0.
-Leaderboard is shown when game over.
+Leaderboard is shown when game over and player is prompted is enter if they
+want to restart the game.
 
-**insert gif**
-
+![Alt Text](https://media.giphy.com/media/AeB8s5mJRNhg4AUQkO/giphy.gif)
 
 # About the components
 The game is written in Java v15.0.2. It is based on a course project of
@@ -70,7 +82,6 @@ There is an option to start non-interactive gameplay by passing `-s KEYSEQUENCES
 command line arguments, which will call Engine.interactWithInputString(). This option
 is only for debugging maze generation and does not contain the full functionality of
 the game.
-
 
 ## Maze generation
 Each maze is generated pseudo-randomly and based on a user-defined seed. Every
