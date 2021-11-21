@@ -1,8 +1,6 @@
 # maze-runner
 In this game, you strive to escape as many mazes as possible!
 
-**Insert gameplay gif**
-
 ![image](https://i.postimg.cc/BbxC7JXB/maze.jpg)
 
 # Game Play
@@ -79,9 +77,10 @@ Modules used in this game are stored in [`lib/`](./lib).
  where the game can be started. 
 
 There is an option to start non-interactive gameplay by passing `-s KEYSEQUENCES` as
-command line arguments, which will call Engine.interactWithInputString(). This option
-is only for debugging maze generation and does not contain the full functionality of
-the game.
+command line arguments, in which KEYSEQUENCES is a sequence of keys pressed if the game
+is being played interactively. Running this calls Engine.interactWithInputString().
+This option is only for debugging maze generation and does not contain the full functionality
+of the game.
 
 ## Maze generation
 Each maze is generated pseudo-randomly and based on a user-defined seed. Every
