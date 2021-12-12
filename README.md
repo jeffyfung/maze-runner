@@ -25,7 +25,7 @@ The field of view moves along with the player.
 Note: you can press "T" to temporarily disable field of view but that is cheating!
 
 ## HUD
-A HUD is located at the under the generated maze and shows:
+A HUD is located at the bottom of the window:
 * Player's health
 * Description of the tile the mouse cursor is currently pointing to 
 * Game level
