@@ -1,5 +1,5 @@
 # maze-runner
-In this game, you strive to escape as many mazes as possible!
+In this game, you try to escape as many mazes as possible!
 
 ![image](https://i.postimg.cc/BbxC7JXB/maze.jpg)
 
